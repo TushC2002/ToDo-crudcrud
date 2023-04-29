@@ -1,0 +1,33 @@
+<!--The todo list app is a web application that allows the user to create and manage a list of tasks or to-do items. 
+    The app has two input fields, one for the name of the task and the other for the description of the task. 
+    When the user submits the form, the app stores the data in a CRUD API called crudcrud.com. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To Do List App</h1>
+    <form id="todo-form">
+        <label for="todo-name">Name:</label>
+        <input type="text" id="todo-name" required>
+        <label for="todo-desc">Description:</label>
+        <input type="text" id="todo-desc" required>
+        <button type="submit">submit</button>
+    </form>
+    <div class="todo-section">
+        <h2>Todo Remaining - </h2>
+        <ul id="todo-remaining"></ul>
+    </div>
+    <div class="todo-section">
+        <h2>Todo Completed - <h2>
+        <ul id="todo-completed"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
